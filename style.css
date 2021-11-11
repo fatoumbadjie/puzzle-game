@@ -1,0 +1,77 @@
+html,body{
+    display: grid;
+    height: 100%;
+    background: #000;
+    background-image: url(/purple-flowers-dal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper{
+    height: 100px;
+    width: 360px;
+    cursor: default;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 10px;
+    animation: animate 1.5s linear infinite;
+}
+
+
+
+.game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 4px rgba(31, 5, 5, 0.5);
+    padding: 15px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+     
+}
+.grid{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border: 1px solid rgb(34, 30, 31)
+}
+.grid button{
+    background-color:blueviolet;
+    color: rgb(236, 192, 46);
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid rgb(41, 16, 16);
+    outline: none;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer button{
+    border: none;
+    font-size: 20;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px black;
+    padding: 5px;
+    width: 80px;
+    background-color: rgb(148, 106, 29);
+    color: red;
+    outline: none;
+    cursor: pointer;
+}
+.footer.button.hover{
+    color: rgb(196, 193, 52);
+    background-color: blue;
+}
+
+.footer span{
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(219, 221, 67);
+    font-weight: bold;
+    margin:auto 0;
+
+}
